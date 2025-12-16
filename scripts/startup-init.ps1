@@ -1,6 +1,9 @@
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value "0"
 echo "" | CiTool.exe -r | out-null
 
+# Map Sysinternals WebDAV
+net use S: \\live.sysinternals.com@SSL\DavWWWRoot
+
 function Get-UserInputWithTimeout {
     [CmdletBinding()]
     param(
