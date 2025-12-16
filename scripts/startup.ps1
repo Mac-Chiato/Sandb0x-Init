@@ -10,4 +10,5 @@ Write-Host "Done."
 Write-Host "Installing Windows Notepad from MS Store"
 winget install 9MSMLRH6LZF3 --accept-source-agreements --accept-package-agreements
 
-Read-Host
+Write-Host "Finished..."
+Start-Sleep -Seconds 10
